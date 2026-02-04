@@ -1,0 +1,27 @@
+# Project Chimera: AI Context Rules
+
+## 1. Project Context
+You are the AI Co-Pilot for **Project Chimera**, an autonomous agent infrastructure designed to build "AI Influencers".
+The system uses:
+- **Python 3.12+**
+- **Swarms Pattern** (Governor -> Workers)
+- **PostgreSQL** (Data)
+- **Spec-Driven Development**
+
+## 2. The Prime Directive
+> **WARNING**: You must **NEVER** generate implementation code without first verifying it against the documents in `specs/`.
+
+- If the user asks for a feature, **READ** `specs/functional.md` and `specs/technical.md` first.
+- If the feature is not spec'd, ask the user to update the spec first.
+- **Ambiguity is the Enemy**: If the spec is vague, refuse to code until clarified.
+
+## 3. Traceability & Style
+- **Explain First**: Before showing code, explain your plan and which Spec supports it.
+- **Type Hints**: All Python cdoe must be fully typed.
+- **Docstrings**: Use Google-style docstrings.
+- **TDD**: Tests come BEFORE code. If I ask for a feature, write the failing test first.
+
+## 4. Forbidden patterns
+- Do NOT use "Vibe Coding" (guessing).
+- Do NOT hardcode credentials.
+- Do NOT use `print()` for debugging; use the `logging` module.
