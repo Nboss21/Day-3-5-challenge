@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Chimera – Trend Scout</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Project Chimera</h1>
+      <p class="subtitle">Scout dashboard – daily trend discovery</p>
+    </header>
+
+    <main class="app-main">
+      <section class="controls">
+        <label>
+          Sources
+          <input id="sources" type="text" value="twitter,techcrunch" />
+        </label>
+        <label>
+          Lookback (hours)
+          <input id="lookback" type="number" value="24" min="1" max="168" />
+        </label>
+        <button id="refresh-btn">Fetch trends</button>
+        <span id="status" class="status"></span>
+      </section>
+
+      <section class="trends" id="trends"></section>
+    </main>
+
+    <script src="/static/app.js" type="module"></script>
+  </body>
+</html>

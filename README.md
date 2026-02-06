@@ -27,6 +27,16 @@ engineers and AI agents can collaborate safely.
    - `make spec-check` – Minimal spec compliance check
    - `make test` – Run the (intentionally failing) test suite
    - `make docker-test` – Build and run tests in Docker
+   - `make serve` – Start the HTTP API and frontend at http://127.0.0.1:8000
+
+## Frontend & API
+
+- Backend API lives under the `chimera` package. A minimal
+  `TrendFetcher` skill is exposed via `GET /api/trends` and
+  returns mock `TrendReport` objects matching the Technical Spec.
+- The browser frontend is in `frontend/` and is served by the
+  FastAPI app as static files. It provides a simple “Scout
+  dashboard” for fetching and visualising daily trends.
 
 ## CI/CD and Governance
 

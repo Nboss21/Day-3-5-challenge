@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #050816;
+  color: #f9fafb;
+}
+
+.app-header {
+  padding: 1.5rem 2rem;
+  background: radial-gradient(circle at top left, #22d3ee, #4f46e5);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.app-main {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+}
+
+.controls input {
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #f9fafb;
+}
+
+button#refresh-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, #22c55e, #14b8a6);
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button#refresh-btn:hover {
+  filter: brightness(1.05);
+}
+
+.status {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.trends {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.trend-card {
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #1f2937;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+.trend-title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.trend-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.trend-summary {
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  margin: 0 0 0.75rem;
+}
+
+.trend-links a {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.trend-links a:hover {
+  text-decoration: underline;
+}
