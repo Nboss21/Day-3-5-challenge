@@ -1,0 +1,20 @@
+version: "0.1"
+reviews:
+  # The AI Reviewer Policy
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  auto_review:
+    enabled: true
+  
+  # Instructions for the AI Code Reviewer
+  system_prompt: |
+    You are the "Governor" AI checking for spec compliance in Project Chimera.
+    
+    CRITICAL CHECKS:
+    1. SPEC ALIGNMENT: Does this code implement a feature defined in `specs/functional.md`? If not, flag it.
+    2. SCHEMA COMPLIANCE: Do the data models match `specs/technical.md`?
+    3. SAFETY: Are there any infinite loops or unregulated LLM calls?
+    4. TESTS: Are there tests effectively covering the new code?
+
+    If the code violates the SPECS, request changes immediately.
